@@ -38,19 +38,19 @@ We will use a Reynolds-averaged Navier-Stokes equation, aka __RANS__ model to de
 The equations describing the time-averaged solutions of the __Navier-Stokes equation__ for an incompressible fluid undergoing stationary flow are:
 
 
-$$\rho \bar{u}_j \frac{\partial \bar{u}_i}{\partial x_j}
-=
+$$\rho \bar{u}_j \frac{\partial \bar{u}_i}{\partial x_j}=
 \rho \bar{f}_i
 +
-\frac{\partial}{\partial x_j}$$
-$$\left[
-    -\bar{p}\,\delta_{ij}
+\frac{\partial}{\partial x_j}
+\left[
+    -\bar{p}\delta_{ij}
     + \mu \left(
         \frac{\partial \bar{u}_i}{\partial x_j}
         + \frac{\partial \bar{u}_j}{\partial x_i}
       \right)
-    - \rho\,\overline{u_i' u_j'}
+    - \rho\overline{u_i' u_j'}
 \right]$$
+
 We will employ two RANS models namely __k-e__ and **k-w**.
 ### $k-\epsilon$ model
 
