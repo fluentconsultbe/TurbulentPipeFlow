@@ -42,8 +42,8 @@ $$\rho \bar{u}_j \frac{\partial \bar{u}_i}{\partial x_j}
 =
 \rho \bar{f}_i
 +
-\frac{\partial}{\partial x_j}
-\left[
+\frac{\partial}{\partial x_j}$$
+$$\left[
     -\bar{p}\,\delta_{ij}
     + \mu \left(
         \frac{\partial \bar{u}_i}{\partial x_j}
