@@ -15,8 +15,8 @@ The results of the simulation performed in __Ansys Fluent__ is compared to the a
 
 The length of the pipe, $L$, is chosen such as to ensure fully developed flow at the outlet. 
 
-$$L=1\; m$$
-$$R=0.05\;m$$
+$$L=1\, m$$
+$$R=0.05\,m$$
 
 **Flow Regime**  
 The Reynolds number is defined as:
@@ -37,8 +37,8 @@ We will use a Reynolds-averaged Navier-Stokes equation, aka __RANS__ model to de
 
 The equations describing the time-averaged solutions of the __Navier-Stokes equation__ for an incompressible fluid undergoing stationary flow are:
 
-$$
-\rho \bar{u}_j \frac{\partial \bar{u}_i}{\partial x_j}
+
+$$\rho \bar{u}_j \frac{\partial \bar{u}_i}{\partial x_j}
 =
 \rho \bar{f}_i
 +
@@ -50,8 +50,7 @@ $$
         + \frac{\partial \bar{u}_j}{\partial x_i}
       \right)
     - \rho\,\overline{u_i' u_j'}
-\right]
-$$
+\right]$$
 We will employ two RANS models namely __k-e__ and **k-w**.
 ### $k-\epsilon$ model
 
@@ -63,12 +62,14 @@ Blends the near‑wall accuracy of k–ω with the free‑stream stability of k�
 
 ## Comparisons
 
-### CFD Friction factor
+#### CFD Friction factor
 
-$$f_{\text{CFD}} = \frac{\Delta p \, D}{\tfrac{1}{2}\rho V^2 L}$$, where $\Delta$ is the pressure difference between the inlet and outlet,
+$$f_{\text{CFD}} = \frac{\Delta p \, D}{\tfrac{1}{2}\rho V^2 L}$$
+
+, where $\Delta p$ is the pressure difference between the inlet and outlet,
 D is the diameter of the pipe.
-\rho is the the fluid density
-V Mean velocity
-L is the length of the pipe. 
+$\rho$ is the the fluid density
+$V$ Mean velocity
+$L$ is the length of the pipe. 
 
 ToDo
