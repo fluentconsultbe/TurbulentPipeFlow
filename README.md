@@ -2,7 +2,11 @@
 
 A verification study of incompressible, fully developed turbulent flow in a circular pipe.  
 
-The simulation performed in __Ansys Fluent__ is compared to the analytical Hagen–Poiseuille solution for velocity profile and pressure drop.
+The results of the simulation performed in __Ansys Fluent__ is compared to the analytical results.
+
+1) The __Darcy friction factor__ is calculated from the simulation results and compared to the __Blasius correlation__ and the __Moody chart__.
+
+2) The CFD mean velocity profile, plotted in $u^+–y^+$ space, is compared with the classical log‑law of the wall to verify that the k–ω SST model correctly reproduces the expected turbulent boundary‑layer behaviour.
 
 ## 1. Problem Definition
 
@@ -25,9 +29,8 @@ $$Re = \frac{\rho U D}{\mu}$$
 - $U$ is the __mean flow velocity__,
 - $\mu$ is the __dynamic viscosity__.
 
-The inlet velocity and fluid properties are chosen such that the Reynolds number is $Re\approx 10^5$. 
+The inlet velocity and fluid properties are chosen such that the resultant Reynolds number lies well within the turbulent regime, ensuring that the flow develops a fully turbulent profile suitable for validation.
 
-Therefore, the flow is __turbulent__.
 ## RANS model
 
 We will use a Reynolds-averaged Navier-Stokes equation, aka __RANS__ model to describe the fluid flow. The principle in this model is to decompose an instantaneous quantity into its time-averaged and fluctuating component.
@@ -58,4 +61,14 @@ A two equation RANS turbulence model that predicts turbulent viscosity using tra
 
 Blends the near‑wall accuracy of k–ω with the free‑stream stability of k–ε and adds a shear‑stress limiter, giving highly reliable predictions for separation, adverse pressure gradients, and general‑purpose engineering flows.
 
+## Comparisons
 
+### CFD Friction factor
+
+$$f_{\text{CFD}} = \frac{\Delta p \, D}{\tfrac{1}{2}\rho V^2 L}$$, where $\Delta$ is the pressure difference between the inlet and outlet,
+D is the diameter of the pipe.
+\rho is the the fluid density
+V Mean velocity
+L is the length of the pipe. 
+
+ToDo
